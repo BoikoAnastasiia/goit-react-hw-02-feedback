@@ -1,0 +1,74 @@
+.list {
+  display: flex;
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.button__good {
+  display: inline-block;
+  padding: 0.75rem 1.25rem;
+  border-radius: 10rem;
+  font-size: 1.3rem;
+  letter-spacing: 0.15rem;
+  transition: all 0.3s;
+  background-color: rgb(55, 146, 19);
+}
+
+.button__good:hover {
+  background-color: rgb(105, 173, 78);
+}
+
+.button__neutral {
+  display: inline-block;
+  padding: 0.75rem 1.25rem;
+  border-radius: 10rem;
+  font-size: 1.3rem;
+  letter-spacing: 0.15rem;
+  transition: all 0.3s;
+  background-color: rgb(139, 185, 206);
+}
+
+.button__neutral:hover {
+  background-color: rgb(213, 221, 230);
+}
+
+.button__bad {
+  display: inline-block;
+  padding: 0.75rem 1.25rem;
+  border-radius: 10rem;
+  font-size: 1.3rem;
+  letter-spacing: 0.15rem;
+  transition: all 0.3s;
+  margin-right: 15px;
+
+  background-color: rgb(187, 61, 22);
+}
+
+.button__bad:hover {
+  background-color: rgb(209, 116, 93);
+}
+
+.miniheader {
+  margin-top: 40px;
+}
+
+.description {
+  border-bottom: 1px solid black;
+  margin-bottom: 5px;
+  width: 150px;
+}
+
+.listContainer {
+  text-align: center;
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.listContainer ul {
+  margin-left: auto;
+  margin-right: auto;
+}
