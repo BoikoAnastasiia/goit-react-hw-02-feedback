@@ -18,11 +18,11 @@ class App extends Component {
   };
 
   render() {
-    // const { value } = this.state;
+    const { rate } = this.state;
     return (
       <div className="container">
         <h1>Please, give a feedback for us</h1>
-        <StatisticButtons onAddRate={this.onAddRate} />
+        <StatisticButtons onAddRate={this.onAddRate} rate={rate} />
       </div>
     );
   }

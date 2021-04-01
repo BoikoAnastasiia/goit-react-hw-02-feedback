@@ -1,7 +1,7 @@
 // import { Component } from 'react';
 import styles from './Statistic.module.css';
 
-const StatisticButtons = onAddRate => (
+const StatisticButtons = ({ onAddRate }) => (
   <ul className={styles.list}>
     <li>
       <button className={styles.button__good} onClick={onAddRate}>

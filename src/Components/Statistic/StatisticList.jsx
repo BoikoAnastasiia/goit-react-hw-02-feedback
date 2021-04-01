@@ -1,7 +1,7 @@
 import styles from './Statistic.module.css';
-const rate = 0;
+// const rate = 0;
 
-const StatisticList = () => (
+const StatisticList = ({ rate = 0 }) => (
   <div className={styles.listContainer}>
     <h2 className={styles.miniheader}>Statistics</h2>
     <ul>
