@@ -7,14 +7,22 @@ class App extends Component {
     good: 0,
     neutral: 0,
     bad: 0,
+    total: 0,
+    positiveFeedback: 0,
+  };
+
+  onAddRate = () => {
+    this.setState(prevstate => ({
+      good: prevstate.good + 1,
+    }));
   };
 
   render() {
-    const { rate } = this.state;
+    // const { value } = this.state;
     return (
       <div className="container">
         <h1>Please, give a feedback for us</h1>
-        <StatisticButtons />
+        <StatisticButtons onAddRate={this.onAddRate} />
       </div>
     );
   }

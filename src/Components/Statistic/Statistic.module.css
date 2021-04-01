@@ -53,6 +53,7 @@
 
 .miniheader {
   margin-top: 40px;
+  text-align: center;
 }
 
 .description {
@@ -62,13 +63,24 @@
 }
 
 .listContainer {
-  text-align: center;
   width: 300px;
   margin-left: auto;
   margin-right: auto;
 }
 
 .listContainer ul {
+  width: 50%;
   margin-left: auto;
   margin-right: auto;
+}
+
+.total {
+  margin-top: 40px;
+  font-weight: 700;
+}
+
+.positive {
+  composes: total;
+  border-bottom: 1px solid black;
+  color: rgb(35, 153, 104);
 }
