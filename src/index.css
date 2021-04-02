@@ -38,3 +38,7 @@ ul {
   border-right: 1px solid rgb(144, 144, 144);
   padding: 15px;
 }
+
+h1 {
+  text-align: center;
+}
