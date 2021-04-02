@@ -1,31 +1,32 @@
 import { Component } from 'react';
 import './index.css';
-import StatisticButtons from './Components/Statistic';
+import Section from './Components/Statistic/';
+import FeedbackOptions from './Components/Statistic';
+import Statistic from './Components/Statistic';
 
 class App extends Component {
   state = {
     good: 0,
     neutral: 0,
     bad: 0,
-    total: 0,
-    positiveFeedback: 0,
   };
 
-  onAddRate = () => {
+  onAddRate = options => {
     this.setState(prevstate => ({
-      good: prevstate.good + 1,
+      [options]: prevstate[options] + 1,
     }));
   };
 
   render() {
-    const { rate } = this.state;
+    const options = Object.keys(this.state);
     return (
-      <div className="container">
-        <h1>Please, give a feedback for us</h1>
-        <StatisticButtons onAddRate={this.onAddRate} rate={rate} />
-      </div>
+      <Section className="container" title="Please, give a feedback for us">
+        <FeedbackOptions onAddRate={this.onAddRate} reviews={options} />
+        <Statistic />
+      </Section>
     );
   }
 }
 
 export default App;
+// '😋', '😶', '☹️';
