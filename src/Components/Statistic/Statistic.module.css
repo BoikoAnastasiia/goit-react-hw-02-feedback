@@ -15,9 +15,12 @@ ul {
   margin-right: 15px;
 }
 
-.buttonList {
-  composes: list;
-  width: 200px;
+.buttonUl {
+  justify-content: space-between;
+  display: flex;
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
   margin-left: auto;
   margin-right: auto;
 }

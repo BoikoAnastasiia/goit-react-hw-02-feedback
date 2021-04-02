@@ -1,7 +1,7 @@
 import styles from './Statistic.module.css';
 
 const FeedbackOptions = ({ reviews, onAddRate }) => (
-  <ul className={styles.buttonList}>
+  <ul className={styles.buttonUl}>
     {reviews.map(button => (
       <li key={button} className={styles.list}>
         <button className={styles.button__bad} onClick={onAddRate}>
