@@ -7,9 +7,9 @@ import Notification from './Components/Notification';
 
 class App extends Component {
   state = {
-    good: 1,
-    neutral: 2,
-    bad: 3,
+    good: 0,
+    neutral: 0,
+    bad: 0,
   };
 
   onLeaveFeedback = options => {
@@ -24,8 +24,8 @@ class App extends Component {
   };
 
   calcpositivePercentage = () => {
-    return (
-      (100 / this.calcTotalFeedback()) * (this.state.good + this.state.neutral)
+    return Math.round(
+      (100 / this.calcTotalFeedback()) * (this.state.good + this.state.neutral),
     );
   };
 

@@ -4,7 +4,11 @@ const FeedbackOptions = ({ reviews, onAddRate }) => (
   <ul className={styles.buttonUl}>
     {reviews.map(button => (
       <li key={button} className={styles.list}>
-        <button className={styles.button__bad} onClick={onAddRate}>
+        <button
+          name={button}
+          className={styles.button__bad}
+          onClick={() => onAddRate(button)}
+        >
           {button}
         </button>
       </li>
