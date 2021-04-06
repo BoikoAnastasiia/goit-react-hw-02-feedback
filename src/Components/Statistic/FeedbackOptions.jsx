@@ -1,4 +1,5 @@
 import styles from './Statistic.module.css';
+import propTypes from 'prop-types';
 
 const FeedbackOptions = ({ reviews, onAddRate }) => (
   <ul className={styles.buttonUl}>
@@ -16,3 +17,7 @@ const FeedbackOptions = ({ reviews, onAddRate }) => (
   </ul>
 );
 export default FeedbackOptions;
+
+FeedbackOptions.propTypes = {
+  onAddRate: propTypes.func.isRequired,
+};
